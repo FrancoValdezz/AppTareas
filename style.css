@@ -1,0 +1,204 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(11, 4, 20);
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.containerLeft{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 20px;
+    
+    color: rgb(245, 243, 243);
+    width: 500px;
+    
+    overflow: hidden;
+}
+
+.containerLeft .information{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.containerLeft .addTarea input{
+    width: 50%;
+    font-size: 16px;
+    padding: 5px;
+    
+}
+.containerLeft .addTarea input:focus{
+    outline: none;
+    box-shadow: 0 0 10px #3498db;
+    border: #3498db 2px solid;
+    
+}
+
+/* estilo para el + de agregar tarea */
+.addTarea .fa-plus:hover{
+    color: rgb(45, 152, 253);
+    transition: all 0.5s;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+
+
+/* aca va la caja de las tareas  */
+.seccion-tarea{
+    margin-top: 10px;
+}
+
+
+.seccion-tarea .box-tarea{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.box-tarea:hover{
+    transition: 0.4s ease ;
+    background-color: rgb(0, 120, 180);
+    box-shadow: 0 0 10px rgb(255, 255, 255) ;
+    border-radius: 10px;
+}
+
+/* Contiene al button de check y la tarea a realizar */
+.box-tarea .check{
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.box-tarea .eliminarAndOption{
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px
+}
+
+/* ESTILOS PARA LA X DE ELEMINAR EL DIV  */
+.seccion-tarea .box-tarea .fa-x{
+    cursor: pointer;
+}
+
+/* Cambiar de color el boton de eliminar */
+.seccion-tarea .box-tarea .fa-x:hover{
+    transition: 0.2s ease;
+    color: red;
+}
+
+.seccion-tarea .box-tarea .fa-grip-vertical{
+    cursor: pointer;
+}
+
+.seccion-tarea .box-tarea .fa-grip-vertical:hover{
+    color: #f3f56f;
+}
+
+/* Boton de realizado */
+.seccion-tarea .box-tarea .fa-circle{
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.seccion-tarea .box-tarea .fa-circle:hover{
+    background-color: rgb(207, 207, 207);
+}
+
+
+.seccion-tarea .box-tarea .fa-done{
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #1eff0098;
+}
+
+
+/* modal para more option */
+.box-tarea .modalMoreOption{
+    background-color: rgb(48, 48, 53);
+    
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    
+    z-index: 1;
+    display: none;
+    overflow: hidden;
+}
+
+.box-tarea .modalMoreOption .ulModal{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.box-tarea .modalMoreOption .ulModal li{
+    list-style: none;
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.box-tarea .modalMoreOption .ulModal li:last-child{
+    list-style: none;
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: none;
+
+}
+
+.box-tarea .modalMoreOption .ulModal li:hover{
+    background-color: rgb(178, 194, 209);
+    
+}
+
+/* ESTILOS PARA EL CONTAINER DE LA DERECHA */
+.containerRight{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 500px;
+    background-color: #c6e6fc;
+}
+.containerRight h2{
+    color: rgb(255, 255, 255);
+    text-align: center
+}
+
+.containerRight h2 input{
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #c6e6fc;
+    border: none;
+    width: 100%;
+}
+
+.containerRight h2 input:focus{
+    outline: none;
+}
